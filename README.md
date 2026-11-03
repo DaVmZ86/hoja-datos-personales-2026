@@ -4,6 +4,10 @@ Aplicación web estática para capturar los datos de la **Hoja de Datos Personal
 (Dirección de Administración, Clave `1A74-009-120`). Al final genera el **PDF tamaño carta**
 ya llenado y listo para imprimir y firmar.
 
+### 👉 [Abrir la aplicación](https://davmz86.github.io/hoja-datos-personales-2026/)
+
+`https://davmz86.github.io/hoja-datos-personales-2026/`
+
 - **Privada:** todo ocurre en el navegador. Ningún dato se envía ni se guarda en un servidor.
 - **Sin instalación:** basta con abrir `index.html` o publicarla en GitHub Pages.
 - **Textos largos:** se reducen automáticamente para caber en su línea.
