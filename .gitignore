@@ -1,0 +1,13 @@
+# PDF llenados con datos personales (no subir)
+Hoja_Datos_Personales_*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

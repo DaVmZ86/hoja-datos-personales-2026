@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoja de Datos Personales</title>
+  <meta name="description" content="Captura tus datos y descarga la Hoja de Datos Personales (Clave 1A74-009-120) llenada en PDF tamaño carta, lista para imprimir.">
+  <link rel="icon" href="assets/logo-imss.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <img src="assets/logo-imss.png" alt="Logo IMSS" class="topbar__logo">
+      <div>
+        <h1>Hoja de Datos Personales</h1>
+        <p class="topbar__sub">Dirección de Administración · Clave 1A74-009-120</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="notice">
+      Llena los campos y presiona <strong>Generar PDF</strong>. Obtendrás el formato en tamaño carta,
+      listo para imprimir y firmar. <strong>Tus datos no salen de tu equipo:</strong> el PDF se genera
+      en tu navegador y no se envía a ningún servidor.
+    </p>
+
+    <form id="form" novalidate autocomplete="on">
+      <section class="card">
+        <h2>Datos generales</h2>
+        <div class="grid">
+          <label class="col-12">OOAD
+            <input name="ooad" placeholder="Ej. OOAD Ciudad de México Sur">
+          </label>
+
+          <label class="col-4">Apellido paterno <span class="req">*</span>
+            <input name="ap_paterno" required autocomplete="family-name">
+          </label>
+          <label class="col-4">Apellido materno
+            <input name="ap_materno">
+          </label>
+          <label class="col-4">Nombre (s) <span class="req">*</span>
+            <input name="nombres" required autocomplete="given-name">
+          </label>
+
+          <label class="col-4">Matrícula <span class="req">*</span>
+            <input name="matricula" required inputmode="numeric">
+          </label>
+          <label class="col-8">Categoría
+            <input name="categoria">
+          </label>
+
+          <label class="col-6">E-mail particular
+            <input name="email_particular" type="email" data-keep-case autocomplete="email">
+          </label>
+          <label class="col-6">E-mail institucional
+            <input name="email_institucional" type="email" data-keep-case placeholder="nombre@imss.gob.mx">
+          </label>
+
+          <label class="col-8">Escolaridad
+            <input name="escolaridad" list="lista-escolaridad">
+            <datalist id="lista-escolaridad">
+              <option value="PRIMARIA"><option value="SECUNDARIA"><option value="BACHILLERATO">
+              <option value="CARRERA TÉCNICA"><option value="LICENCIATURA"><option value="ESPECIALIDAD">
+              <option value="MAESTRÍA"><option value="DOCTORADO">
+            </datalist>
+          </label>
+          <label class="col-4">Estado civil
+            <select name="estado_civil">
+              <option value=""></option>
+              <option>SOLTERO(A)</option><option>CASADO(A)</option><option>UNIÓN LIBRE</option>
+              <option>DIVORCIADO(A)</option><option>VIUDO(A)</option>
+            </select>
+          </label>
+        </div>
+
+        <h3>Lugar de nacimiento</h3>
+        <div class="grid">
+          <label class="col-4">País
+            <input name="nac_pais" value="MÉXICO">
+          </label>
+          <label class="col-4">Estado
+            <input name="nac_estado">
+          </label>
+          <label class="col-4">Ciudad
+            <input name="nac_ciudad">
+          </label>
+
+          <label class="col-8">Adscripción
+            <input name="adscripcion">
+          </label>
+          <label class="col-4">Turno
+            <select name="turno">
+              <option value=""></option>
+              <option>MATUTINO</option><option>VESPERTINO</option><option>NOCTURNO</option>
+              <option>JORNADA ACUMULADA</option><option>MIXTO</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Domicilio particular</h2>
+        <div class="grid">
+          <label class="col-6">Calle
+            <input name="calle" autocomplete="address-line1">
+          </label>
+          <label class="col-3">Número ext.
+            <input name="num_ext">
+          </label>
+          <label class="col-3">Número int.
+            <input name="num_int">
+          </label>
+
+          <label class="col-6">Colonia
+            <input name="colonia">
+          </label>
+          <label class="col-6">Alcaldía / Municipio
+            <input name="alcaldia">
+          </label>
+
+          <label class="col-4">Estado
+            <input name="dom_estado">
+          </label>
+          <label class="col-4">Ciudad
+            <input name="dom_ciudad">
+          </label>
+          <label class="col-4">Población
+            <input name="poblacion">
+          </label>
+
+          <label class="col-3">C.P.
+            <input name="cp" inputmode="numeric" maxlength="5" pattern="\d{5}" autocomplete="postal-code">
+          </label>
+          <label class="col-9">Teléfono (s)
+            <input name="telefonos" type="tel" autocomplete="tel">
+          </label>
+
+          <label class="col-8">U.M.F. donde recibe atención médica
+            <input name="umf" placeholder="Ej. UMF No. 28">
+          </label>
+          <label class="col-4">Número de consultorio
+            <input name="consultorio">
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>En caso de accidente favor de avisar a</h2>
+        <div class="grid">
+          <label class="col-12">Nombre (s)
+            <input name="emerg_nombre">
+          </label>
+          <label class="col-6">Parentesco
+            <input name="emerg_parentesco" list="lista-parentesco">
+            <datalist id="lista-parentesco">
+              <option value="ESPOSO(A)"><option value="MADRE"><option value="PADRE">
+              <option value="HIJO(A)"><option value="HERMANO(A)"><option value="CONCUBINO(A)">
+            </datalist>
+          </label>
+          <label class="col-6">Teléfono (s)
+            <input name="emerg_telefono" type="tel">
+          </label>
+        </div>
+      </section>
+
+      <section class="card card--options">
+        <label class="check">
+          <input type="checkbox" id="mayusculas" checked>
+          Escribir los datos en MAYÚSCULAS (excepto correos electrónicos)
+        </label>
+        <p class="hint">
+          La firma se deja en blanco para que la escribas a mano después de imprimir.
+          Recuerda adjuntar copia de credencial de elector, comprobante de domicilio y comprobante de escolaridad.
+        </p>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <div class="actions">
+        <button type="button" id="btn-limpiar" class="btn btn--ghost">Limpiar formulario</button>
+        <button type="button" id="btn-ver" class="btn btn--secondary">Vista previa / imprimir</button>
+        <button type="submit" id="btn-descargar" class="btn btn--primary">Generar PDF</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="wrap footer">
+    Herramienta no oficial para facilitar el llenado del formato. Verifica tus datos antes de entregarlo.
+  </footer>
+
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="js/plantilla-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
