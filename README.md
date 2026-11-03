@@ -41,13 +41,13 @@ git init
 git add .
 git commit -m "Hoja de Datos Personales: app de llenado"
 git branch -M main
-git remote add origin https://github.com/<tu-usuario>/hoja-datos-personales-2026.git
+git remote add origin https://github.com/DaVmZ86/hoja-datos-personales-2026.git
 git push -u origin main
 ```
 
 Después, en GitHub ve a **Settings → Pages → Build and deployment → Source** y elige
 **GitHub Actions**. El flujo `.github/workflows/pages.yml` publica el sitio en cada `push` a `main`,
-en `https://<tu-usuario>.github.io/hoja-datos-personales-2026/`.
+en `https://DaVmZ86.github.io/hoja-datos-personales-2026/`.
 
 ## Modificar la plantilla
 
