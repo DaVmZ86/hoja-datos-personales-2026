@@ -84,10 +84,6 @@ No hay instalación ni dependencias para usar la app: es un sitio estático.
   python tools/generar_plantilla.py
   ```
 
-- **Publicación**: cada `push` a `main` vuelve a publicar el sitio en GitHub Pages en uno o dos minutos.
-
-Para probar cambios, abre la app localmente, genera un PDF con datos ficticios y compáralo impreso contra el formato en papel. No subas al repositorio PDF llenados con datos reales: `.gitignore` ya excluye los archivos `Hoja_Datos_Personales_*.pdf`.
-
 ## Créditos y licencia
 
 Creado por **DaVmZ86**
