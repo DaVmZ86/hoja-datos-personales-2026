@@ -46,7 +46,9 @@ Es un proyecto independiente hecho por un trabajador del IMSS para sus compañer
 
 ## Tus datos y privacidad
 
-Todo ocurre dentro de tu navegador. La aplicación **no tiene servidor, no envía tus datos a ningún lado, no los guarda y no usa cuentas ni rastreadores**. El PDF se genera en tu propio dispositivo. Al cerrar o recargar la página, los datos capturados se borran.
+Todo ocurre dentro de tu navegador. La aplicación **no tiene servidor, no envía tus datos a ningún lado, no los guarda y no usa cuentas**. El PDF se genera en tu propio dispositivo. Al cerrar o recargar la página, los datos capturados se borran.
+
+Para saber cuántas personas usan la herramienta, la página incluye [GoatCounter](https://www.goatcounter.com/), un contador de visitas sin cookies que solo registra datos generales de la visita (página, navegador, país). Nunca recibe lo que escribes en el formulario ni el PDF.
 
 ## Problemas y sugerencias
 
