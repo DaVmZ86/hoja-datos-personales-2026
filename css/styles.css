@@ -31,7 +31,7 @@ body {
 /* ---- Encabezado ---- */
 .topbar { background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro)); color: #fff; border-bottom: 4px solid var(--azul-brillo); }
 .topbar__inner { display: flex; align-items: center; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
-.topbar__logo { width: 46px; height: auto; background: #fff; padding: 4px; border-radius: 6px; }
+.topbar__logo { width: 50px; height: 50px; flex: none; border-radius: 11px; box-shadow: 0 0 0 2px rgba(255,255,255,.35), 0 4px 10px rgba(10,30,60,.3); }
 .topbar h1 { margin: 0; font-size: 1.35rem; letter-spacing: .02em; }
 .topbar__sub { margin: 2px 0 0; font-size: .85rem; opacity: .85; }
 
